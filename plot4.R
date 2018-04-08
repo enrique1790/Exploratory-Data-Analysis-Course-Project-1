@@ -23,6 +23,7 @@ plot(datetime, subMetering1, type="l", ylab="Energy Submetering", xlab="")
 lines(datetime, subMetering2, type="l", col="red")
 lines(datetime, subMetering3, type="l", col="blue")
 legend("topright", lty=1, col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), cex = 0.5)
+plot(datetime, globalReactivePower, type="l", xlab="datetime", ylab="Global_reactive_power")
 
 ## Saving to file
 dev.copy(png, file="plot4.png", height=480, width=480)
